@@ -19,7 +19,7 @@ This project aims to predict students’ final exam scores by analyzing various 
 Language: Python 3.8+  
 Libraries: Pandas, NumPy, Scikit-learn, Flask, Matplotlib, Seaborn  
 Tools: VS Code, GitHub, MLFlow (optional), logging  
-Model: Random Forest Regressor (can be customized)
+Model: Best among different choices (can be customized)
 
 ## How It Works
 1. Data Collection and EDA conducted in `notebook/EDA.ipynb` using a CSV dataset containing student scores and background info.  
@@ -45,10 +45,9 @@ Model: Random Forest Regressor (can be customized)
 - Enter student data to get a performance prediction
 
 ## Model Training and Prediction
-The project uses a `RandomForestRegressor` to predict math scores. The pipeline handles:  
+The project uses a different models and then evaluates the best one to predict math scores. The pipeline handles:  
 - Standard scaling of numerical features  
-- One-hot encoding of categorical variables  
-- Model serialization using `joblib`  
+- One-hot encoding of categorical variables   
 The trained model is used to serve predictions via the web interface.
 
 ## Future Improvements
