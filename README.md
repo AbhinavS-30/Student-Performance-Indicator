@@ -55,6 +55,3 @@ The trained model is used to serve predictions via the web interface.
 - Integrate MLflow for experiment and model tracking  
 - Dockerize the application for portability  
 - Extend to classification tasks (e.g., pass/fail prediction)
-
-## License
-This project is licensed under the MIT License.
